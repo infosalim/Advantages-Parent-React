@@ -3,7 +3,7 @@ body{
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: #F3F6F9;
+  background: #F3F6F9 !important;
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Avenir';
   overflow: hidden;
@@ -212,6 +212,8 @@ button {
   }
   .dropdown-menu {
     padding: 0 !important;
+    margin: 2.125rem 0 0;
+    display: block;
   }
   .dropdown-item {
     font-weight: 400;
@@ -256,6 +258,17 @@ button {
   }
   .header-flag-dropdown {
     padding-left: 15px;
+    width: 80%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3F4254;
+    line-height: 33px;
+  }
+  .header-flag-dropdown img{
+    width: 14px;
+    height: 10px;
+    margin-right: 12px;
+    margin-top: -5px;
   }
   /* Start Custom Flug Select Option Css */
   .vodiapicker{
@@ -8367,9 +8380,7 @@ button {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: end;
+      align-items: flex-end;
     }
     .ra_jackson_btn_area a {
       color: #0078BF;
@@ -8755,9 +8766,7 @@ button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: start;
+      align-items: flex-start;
       padding-top: 17px;
     }
     .ra_sortable_buttom_single_item_sub img {

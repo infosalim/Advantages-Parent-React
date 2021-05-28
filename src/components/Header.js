@@ -99,9 +99,9 @@ const Header = () => {
                                         <div className="down-icon-two"><img src={downIcon2} alt="Images" /></div>
                                     </button>
                                     {dropDown ? (<div className="dropdown-menu adjust" aria-labelledby="dropdownMenuButton">
-                                        <a className="dropdown-item width-two" href="/#">Parent Page <span>3</span></a>
-                                        <a className="dropdown-item width-two" href="/settings.html">Settings</a>
-                                        <a className="dropdown-item width-two" href="/#">Log Out</a>
+                                        <Link className="dropdown-item width-two" to="/#">Parent Page <span>3</span></Link>
+                                        <Link className="dropdown-item width-two" to="/settings.html">Settings</Link>
+                                        <Link className="dropdown-item width-two" to="/#">Log Out</Link>
                                     </div>) : null}
                                     
                                 </div>
@@ -138,7 +138,7 @@ const Header = () => {
 
                  {/* start mobile search box area  */}
                 <div className="mobile-search-icon">
-                    <a href="/#search"><img src="assets/images/home/search.png" alt="Images" /></a>
+                    <Link to="/#search"><img src="assets/images/home/search.png" alt="Images" /></Link>
                     <div id="search">
                         <button type="button" className="close"><i className="fa fa-times" aria-hidden="true"></i></button>
                         <form>
@@ -153,31 +153,31 @@ const Header = () => {
                 <div className="header-bottom-content">
                     <ul>
                         <li className="home">
-                            <a className="tablinks" href="/#">
+                            <Link className="tablinks" to="/#">
                                 <img src={homeIcon} alt="Images" />
                                 Home
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="learning">
-                            <a className="tablinks" href="/#">
+                            <Link className="tablinks" to="/#">
                                 <img src={calender} alt="Images" />
                                 Calendar
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="p_traking">
-                            <a className="tablinks" href="/#">
+                            <Link className="tablinks" to="/#">
                                 <img src={equalizer} alt="Images" />
                                 Progress tracking
-                            </a>
+                            </Link>
                         </li>
                         <li className="resources">
-                            <a className="tablinks" href="/#">
+                            <Link className="tablinks" to="/#">
                                 <img src={resource} alt="Images" />
                                 Resources
                                 <span>14</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -188,52 +188,52 @@ const Header = () => {
                     <ul id="mu_accordion" className="mu_accordion">
                         <li className="home">
                             <div className="link">
-                                <a className="tablinks actives" href="/#">
+                                <Link className="tablinks actives" to="/#">
                                     <img src={homeIcon} alt="Images" />
                                     Home
-                                </a>
+                                </Link>
                             </div>
                         </li>
 
                         <li className="learning">
                             <div className="link">
-                                <a className="tablinks" href="/#">
+                                <Link className="tablinks" to="/#">
                                     <img src={calender} alt="Images" />
                                     Calendar <i className="fa fa-chevron-down custom"></i>
-                                </a>
+                                </Link>
                             </div>
                             <ul className="mu_submenu">
-                                <li><a href="/#">Action</a></li>
-                                <li><a href="/#">Action Two</a></li>
-                                <li><a href="/#">Action Three</a></li>
+                                <li><Link to="/#">Action</Link></li>
+                                <li><Link to="/#">Action Two</Link></li>
+                                <li><Link to="/#">Action Three</Link></li>
                             </ul>
                         </li>
 
                         <li className="p_traking">
                             <div className="link">
-                                <a className="tablinks" href="/#">
+                                <Link className="tablinks" to="/#">
                                     <img src={equalizer} alt="Images" />
                                     Progress tracking
-                                </a>
+                                </Link>
                             </div>
                         </li>
                         <li className="resources">
                             <div className="link">
-                                <a className="tablinks" href="/#">
+                                <Link className="tablinks" to="/#">
                                     <img src={resource} alt="Images" />
                                     Resources
                                     <span>14</span>
-                                </a>
+                                </Link>
                             </div>
                         </li>
                         <li>
                             <div className="link">
-                                <a href="/settings">Settings</a>
+                                <Link to="/settings">Settings</Link>
                             </div>
                         </li>
                         <li>
                             <div className="link">
-                                <a href="/#">Log out</a>
+                                <Link to="/#">Log out</Link>
                             </div>
                         </li>
                     </ul>

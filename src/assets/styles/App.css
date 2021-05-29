@@ -1449,7 +1449,7 @@ button {
   bottom: 0;
   z-index: 1;
   border-top-left-radius: 25px;
-  z-index: 99;
+  z-index: 99999;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -1481,7 +1481,7 @@ button {
   width: 100%;
   border-radius: 25px;
   cursor: pointer;
-  z-index: 99;
+  z-index: 9999;
 }
 .chating-heading-left {
   display: -webkit-box;

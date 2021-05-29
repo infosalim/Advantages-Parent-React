@@ -75,10 +75,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -115,10 +115,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -155,10 +155,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -195,10 +195,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -282,7 +282,7 @@ const Progress = () => {
                                                         <div className="myclassNameroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -319,10 +319,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar kenneth">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -359,10 +359,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar kenneth">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>
@@ -399,10 +399,10 @@ const Progress = () => {
                                                     </div>
 
                                                     <div className="single-stuinfo-progressbar kenneth">
-                                                        <div className="myclassNameroom-single-left-content-course-progress">
+                                                        <div className="myclassroom-single-left-content-course-progress">
                                                             <div className="course-progress-left">
                                                                 <p>Course progress</p>
-                                                                <div className="myclassNameroom-single-left-cross-progress">
+                                                                <div className="myclassroom-single-left-cross-progress">
                                                                     <div className="barra-nivel" data-nivel="80%" style={{width: '80%'}}></div>
                                                                 </div>
                                                             </div>

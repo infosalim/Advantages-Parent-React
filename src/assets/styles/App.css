@@ -2720,10 +2720,9 @@ button {
   border: 1px solid #ddd;
   position: absolute;
   right: 0;
-  bottom: -135px;
+  bottom: -126px;
   border-radius: 4px;
   z-index: 999;
-  display: none;
 }
 .mu_dropdown ul li a{
   color: #3F4254;
@@ -9570,6 +9569,12 @@ button {
   /* Start Learning Path Content Css */
 .new-project-porgress-traking {
   position: relative;
+}
+.new-project-porgress-traking .dropdown-menu {
+  margin: 0.125rem 0 0;
+}
+.new-project-porgress-traking .dropdown-menu.course {
+  margin: 2.125rem 0 0;
 }
 .learning-path-popup-area {
   background: #FFFFFF;

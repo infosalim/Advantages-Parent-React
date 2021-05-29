@@ -6,13 +6,17 @@ import './assets/styles/App.css';
 import Layout from './Layout/Layout';
 // Pages
 import Home from './pages/Home';
+import ProgressTracking from './pages/ProgressTracking';
 
 function App() {
   return (
     <Layout>
       <Switch>
-         <Route path='/'>
+         <Route exact path='/'>
           <Home />
+        </Route>
+         <Route exact path='/progress-tracking'>
+          <ProgressTracking />
         </Route>
         {/*<Route path="/users">
           <Users />

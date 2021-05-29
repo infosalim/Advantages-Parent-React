@@ -1470,6 +1470,7 @@ button {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 7px 20px;
+  cursor: pointer;
 }
 .chating-heading-area {
   position: fixed;
@@ -1478,6 +1479,7 @@ button {
   max-width: 265px;
   width: 100%;
   border-radius: 25px;
+  cursor: pointer;
   z-index: 99;
 }
 .chating-heading-left {

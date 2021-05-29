@@ -1,9 +1,13 @@
-import React from 'react';
+import BreadCrumb from '../components/BreadCrumb';
+import Progress from '../components/home/Progress';
+import Upcoming from '../components/home/Upcoming';
 
 const Home = () => {
     return (
-        <div style={{minHeight: '100vh'}}>
-            Home
+        <div>
+            <BreadCrumb title='Home' />
+            <Progress/>
+            <Upcoming/>
         </div>
     );
 };

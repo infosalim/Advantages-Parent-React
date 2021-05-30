@@ -7,6 +7,7 @@ import Layout from './Layout/Layout';
 // Pages
 import Home from './pages/Home';
 import ProgressTracking from './pages/ProgressTracking';
+import StudentInfo from './pages/StudentInfo';
 
 function App() {
   return (
@@ -18,12 +19,9 @@ function App() {
          <Route exact path='/progress-tracking'>
           <ProgressTracking />
         </Route>
-        {/*<Route path="/users">
-          <Users />
+         <Route exact path='/student-info'>
+          <StudentInfo />
         </Route>
-        <Route path="/">
-          <Home />
-        </Route> */}
       </Switch>
     </Layout>
   );

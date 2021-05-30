@@ -9763,7 +9763,7 @@ button {
   padding-top: 30px;
 }
 .students-information-dropdown {
-  padding-bottom: 25px;
+  padding: 25px 0;
 }
 .students-information-dropdown button {
   background: transparent;

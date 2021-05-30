@@ -8,6 +8,7 @@ import Layout from './Layout/Layout';
 import Home from './pages/Home';
 import ProgressTracking from './pages/ProgressTracking';
 import StudentInfo from './pages/StudentInfo';
+import Parent from './pages/Parent';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
          <Route exact path='/student-info'>
           <StudentInfo />
+        </Route>
+         <Route exact path='/parent'>
+          <Parent />
         </Route>
       </Switch>
     </Layout>

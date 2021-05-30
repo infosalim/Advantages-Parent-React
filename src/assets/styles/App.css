@@ -9904,6 +9904,9 @@ m .ra_courch_area .mu_dropdown_menu_content ul li:last-child img {
   padding: 30px;
   margin-bottom: 30px;
 }
+.parent-page .single-students-request-content{
+  width: calc(50% - 15px);
+}
 .single-students-request-content img {
   margin: 0;
 }

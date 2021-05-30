@@ -10,6 +10,7 @@ import ProgressTracking from './pages/ProgressTracking';
 import StudentInfo from './pages/StudentInfo';
 import Parent from './pages/Parent';
 import Message from './pages/Message';
+import LearningPath from './pages/LearningPath';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </Route>
          <Route exact path='/message'>
           <Message />
+        </Route>
+         <Route exact path='/learning-path'>
+          <LearningPath />
         </Route>
       </Switch>
     </Layout>

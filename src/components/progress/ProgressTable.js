@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 
 import SingleProgress from './SingleProgress';
-import FilterCard from './FilterCard';
-
 
 import angleTop from '../../assets/images/learning/angel-top.png';
 import angleBottom from '../../assets/images/learning/angel-buttom.png';
@@ -36,7 +34,6 @@ const ProgressTable = () => {
                         <Link className="btn_style_4 click" to="#">Full Path Progress</Link>
                     </div>
                 </div>
-                <FilterCard />
                 <div className="ra_sortable_main_area_start">
                     <div className=""></div>
                 </div>

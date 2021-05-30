@@ -1,17 +1,17 @@
 import BreadCrumb from '../components/BreadCrumb';
 import ProgressTrackingHeading from '../components/progress/ProgressTrackingHeading';
 import FilterCard from '../components/progress/FilterCard';
-import ProgressTable from '../components/progress/ProgressTable';
+import LearningPathChart from '../components/learningPath/LearningPathChart';
 
-const ProgressTracking = () => {
+const LearningPath = () => {
     return (
-        <div className='new-project-porgress-traking'>
+        <div>
             <BreadCrumb title='Progress Tracking' />
             <ProgressTrackingHeading/>
             <FilterCard/>
-            <ProgressTable/>
+            <LearningPathChart/>
         </div>
     );
 };
 
-export default ProgressTracking;
+export default LearningPath;

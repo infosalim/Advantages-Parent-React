@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import ProgressTracking from './pages/ProgressTracking';
 import StudentInfo from './pages/StudentInfo';
 import Parent from './pages/Parent';
+import Message from './pages/Message';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </Route>
          <Route exact path='/parent'>
           <Parent />
+        </Route>
+         <Route exact path='/message'>
+          <Message />
         </Route>
       </Switch>
     </Layout>

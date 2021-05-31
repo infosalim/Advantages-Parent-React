@@ -12,34 +12,50 @@ import Parent from './pages/Parent';
 import Message from './pages/Message';
 import LearningPath from './pages/LearningPath';
 import LearningDetails from './pages/LearningDetails';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <Layout>
-      <Switch>
-         <Route exact path='/'>
+    <Switch>
+      <Route exact path='/'>
+        <Layout>
           <Home />
-        </Route>
-         <Route exact path='/progress-tracking'>
+        </Layout>
+      </Route>
+      <Route exact path='/progress-tracking'>
+        <Layout>
           <ProgressTracking />
-        </Route>
-         <Route exact path='/student-info'>
+        </Layout>
+      </Route>
+      <Route exact path='/student-info'>
+        <Layout>
           <StudentInfo />
-        </Route>
-         <Route exact path='/parent'>
+        </Layout>
+      </Route>
+      <Route exact path='/parent'>
+        <Layout>
           <Parent />
-        </Route>
-         <Route exact path='/message'>
+        </Layout>
+      </Route>
+      <Route exact path='/message'>
+        <Layout>
           <Message />
-        </Route>
-         <Route exact path='/learning-path'>
+        </Layout>
+      </Route>
+      <Route exact path='/learning-path'>
+        <Layout>
           <LearningPath />
-        </Route>
-         <Route exact path='/learning-details'>
+        </Layout>
+      </Route>
+      <Route exact path='/learning-details'>
+        <Layout>
           <LearningDetails />
-        </Route>
-      </Switch>
-    </Layout>
+        </Layout>
+      </Route>
+      <Route exact path='/login'>
+          <Login />
+      </Route>
+    </Switch>
   );
 }
 

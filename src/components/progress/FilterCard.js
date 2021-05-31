@@ -7,16 +7,15 @@ import reload from '../../assets/images/learning/reload.png';
 import list from '../../assets/images/learning/list.png';
 import list2 from '../../assets/images/learning/list2.png';
 
-const FilterCard = () => {
+const FilterCard = ({ title }) => {
     const [schoolYear, setSchoolYear] = useState(false);
     const [school, setSchool] = useState(false);
     const [schoolStatus, setSchoolStatus] = useState(false);
 
     return (
-        <div>
+        <div className='filterCard'>
             <div className='container'>
-
-
+            {title ? <h2>{title}</h2> : null}
                 <div className="dropdown_search_flex changed">
                     {/* <!-- Start Dropdown Menu --> */}
                     <div className="mu_dropdown_menu_content dropdown">

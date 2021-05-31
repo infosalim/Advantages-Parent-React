@@ -11,6 +11,7 @@ import StudentInfo from './pages/StudentInfo';
 import Parent from './pages/Parent';
 import Message from './pages/Message';
 import LearningPath from './pages/LearningPath';
+import LearningDetails from './pages/LearningDetails';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         </Route>
          <Route exact path='/learning-path'>
           <LearningPath />
+        </Route>
+         <Route exact path='/learning-details'>
+          <LearningDetails />
         </Route>
       </Switch>
     </Layout>

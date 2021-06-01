@@ -13,6 +13,7 @@ import Message from './pages/Message';
 import LearningPath from './pages/LearningPath';
 import LearningDetails from './pages/LearningDetails';
 import Login from './pages/Login';
+import MySchedule from './pages/MySchedule';
 
 function App() {
   return (
@@ -50,6 +51,11 @@ function App() {
       <Route exact path='/learning-details'>
         <Layout>
           <LearningDetails />
+        </Layout>
+      </Route>
+      <Route exact path='/my-schedule'>
+        <Layout>
+          <MySchedule />
         </Layout>
       </Route>
       <Route exact path='/login'>

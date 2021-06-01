@@ -9904,7 +9904,7 @@ m .ra_courch_area .mu_dropdown_menu_content ul li:last-child img {
   padding: 30px;
   margin-bottom: 30px;
 }
-.parent-page .single-students-request-content{
+.parent-page .single-students-request-content {
   width: calc(50% - 15px);
 }
 .single-students-request-content img {
@@ -10223,10 +10223,13 @@ m .ra_courch_area .mu_dropdown_menu_content ul li:last-child img {
   margin: 0 20px;
 }
 /* End Home Page Css */
-.filterCard h2{
+.filterCard h2 {
   font-size: 18px;
-  color: #05233B;
+  color: #05233b;
   font-weight: 300;
+}
+.list_resource_pages_main_area .dropdown-menu {
+  margin: 0.125rem 0 0;
 }
 /* ====================================================================================================================================================
     ===========================                             *** END NEW PROJECT PAGES CSS ***                           ================================

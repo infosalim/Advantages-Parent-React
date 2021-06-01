@@ -15,6 +15,7 @@ import LearningDetails from './pages/LearningDetails';
 import Login from './pages/Login';
 import MySchedule from './pages/MySchedule';
 import Discussion from './pages/Discussion';
+import Resources from './pages/Resources';
 
 function App() {
   return (
@@ -62,6 +63,11 @@ function App() {
       <Route exact path='/discussion'>
         <Layout>
           <Discussion />
+        </Layout>
+      </Route>
+      <Route exact path='/resources'>
+        <Layout>
+          <Resources />
         </Layout>
       </Route>
       <Route exact path='/login'>

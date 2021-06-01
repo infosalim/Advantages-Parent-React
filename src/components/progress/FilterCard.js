@@ -15,7 +15,7 @@ const FilterCard = ({ title }) => {
     return (
         <div className='filterCard'>
             <div className='container'>
-            {title ? <h2>{title}</h2> : null}
+                {title ? <h2>{title}</h2> : null}
                 <div className="dropdown_search_flex changed">
                     {/* <!-- Start Dropdown Menu --> */}
                     <div className="mu_dropdown_menu_content dropdown">

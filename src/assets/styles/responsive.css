@@ -1305,7 +1305,7 @@
 	   }
 	   .single-students-request-content.third-child,.single-students-request-content.last-child,.single-students-request-content {
 	   	height: auto;
-	   	margin-top: 25px;
+	   	margin: 25px 0 0;
 	   }
 	   .btn_style_1.update {
 	   	position: inherit;
@@ -1331,7 +1331,10 @@
 	   .upcomming-view-classroom-content {
 	   	justify-content: space-between;
 	   }
-
+	   .parent-page .single-students-request-content{
+		   width: 100%;
+		   margin-bottom: 0;
+	   }
 	}
 
 

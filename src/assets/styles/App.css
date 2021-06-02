@@ -10303,7 +10303,14 @@ m .ra_courch_area .mu_dropdown_menu_content ul li:last-child img {
 .list_resource_pages_main_area .dropdown-menu {
   margin: 0.125rem 0 0;
 }
-
+.myScheduleArea .swiper-container{
+  padding-bottom: 0;
+}
+.myScheduleArea .swiper-container::before,
+.myScheduleArea .ra_event_main_area_slider_items::after,
+.myScheduleArea .swiper-container::after{
+  display: none;
+}
 /* ====================================================================================================================================================
     ===========================                             *** END NEW PROJECT PAGES CSS ***                           ================================
     ==================================================================================================================================================== */

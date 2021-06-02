@@ -46,8 +46,6 @@ const SliderArea = () => {
                                             slidesPerView={4}
                                             navigation={{ clickable: true }}
                                             pagination={{ clickable: true }}
-                                            onSwiper={(swiper) => console.log(swiper)}
-                                            onSlideChange={() => console.log('slide change')}
                                             breakpoints={{
                                                 "320": {
                                                     "slidesPerView": 1,

@@ -14,7 +14,7 @@ import roomThumb4 from '../../assets/images/home/cfour.png';
 import roomThumb5 from '../../assets/images/home/cfive.png';
 
 const ChatBox = () => {
-    const [showChat, setShowChat] = useState(true);
+    const [showChat, setShowChat] = useState(false);
     return (
         <div className="chating-area">
             {/* <!-- Start Chating Heading Area --> */}

@@ -15,9 +15,13 @@ import homeIcon from "../assets/images/home/home.png";
 import calender from "../assets/images/home/icon.png";
 import equalizer from "../assets/images/home/equalizer.png";
 import resource from "../assets/images/home/inbox.png";
+import searchIcon from "../assets/images/home/search.png";
 
 const Header = () => {
     const [dropDown, setDropDown] = useState(false);
+    const [searchOpen, setSearchOpen] = useState(false);
+    const [mobileNavOpen, setMobileNavOpen] = useState(false);
+    const [calenderSubmenu, setCalenderSubmenu] = useState(false);
     const options = [
         { value: 'UK', label: <div><img src={ukFlag} height="30px" width="30px" alt='flag' />UK </div> },
         { value: 'USA', label: <div><img src={usFlag} height="30px" width="30px"  alt='flag' />USA </div> },
@@ -126,8 +130,8 @@ const Header = () => {
         <div className="header-bottom-area">
             <div className="container">
                  {/* start mobile menu icon  */}
-                <div className="mobile-menu-icon">
-                    <div className="all-p-humber">
+                <div onClick={() => setMobileNavOpen(!mobileNavOpen)} className="mobile-menu-icon">
+                    <div className={`all-p-humber ${mobileNavOpen ? 'open' : null}`}>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -138,14 +142,14 @@ const Header = () => {
 
                  {/* start mobile search box area  */}
                 <div className="mobile-search-icon">
-                    <Link to="/#search"><img src="assets/images/home/search.png" alt="Images" /></Link>
-                    <div id="search">
-                        <button type="button" className="close"><i className="fa fa-times" aria-hidden="true"></i></button>
+                    <button onClick={() => setSearchOpen(!searchOpen)}><img src={searchIcon} alt="Images" /></button>
+                    {searchOpen ? <div id="search">
+                        <button onClick={() => setSearchOpen(false)} type="button" className="close"><i className="fa fa-times" aria-hidden="true"></i></button>
                         <form>
                             <input type="search" placeholder="Search Keyword" />
                             <button type="submit" className="btn btn-primary">Search</button>
                         </form>
-                    </div>
+                    </div> : null}
                 </div>
                  {/* end mobile search box area  */}
 
@@ -185,7 +189,7 @@ const Header = () => {
 
                 {/* Start Mobile Dropdown Menu  */}
                 <div className="mobile_main_menu_content">
-                    <ul id="mu_accordion" className="mu_accordion">
+                    {mobileNavOpen ? <ul id="mu_accordion" className="mu_accordion">
                         <li className="home">
                             <div className="link">
                                 <Link className="tablinks actives" to="/#">
@@ -199,10 +203,10 @@ const Header = () => {
                             <div className="link">
                                 <Link className="tablinks" to="/#">
                                     <img src={calender} alt="Images" />
-                                    Calendar <i className="fa fa-chevron-down custom"></i>
+                                    Calendar <i onClick={() => setCalenderSubmenu(!calenderSubmenu)} className="fa fa-chevron-down custom"></i>
                                 </Link>
                             </div>
-                            <ul className="mu_submenu">
+                            <ul className="mu_submenu" style={{display: `${calenderSubmenu ? 'block' : 'none'}`}}>
                                 <li><Link to="/#">Action</Link></li>
                                 <li><Link to="/#">Action Two</Link></li>
                                 <li><Link to="/#">Action Three</Link></li>
@@ -236,7 +240,7 @@ const Header = () => {
                                 <Link to="/#">Log out</Link>
                             </div>
                         </li>
-                    </ul>
+                    </ul> : null}
                 </div>
                 {/* <!-- End Mobile Dropdown Menu --> */}
             </div>

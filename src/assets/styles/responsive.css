@@ -708,6 +708,9 @@
 			-ms-flex-direction: column;
 			flex-direction: column;
 		}
+		.mobile_main_menu_content .mu_accordion {
+			display: block;
+		}
 		.single-top-progress-area {
 			-webkit-box-flex: 0;
 			-ms-flex: 0 0 100%;

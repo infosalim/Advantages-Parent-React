@@ -1,6 +1,12 @@
-import React from 'react';
+import {useState} from 'react';
 
 const LearningPathChart = () => {
+    const [ science, setScience ] = useState(true);
+    const [ tech, setTech ] = useState(false);
+    const [ math, setMath ] = useState(false);
+    const [ fineArt, setFineArt ] = useState(false);
+    const [ socialStudy, setSocialStudy ] = useState(false);
+    const [ foreignLang, setForeignLang ] = useState(false);
     return (
         <div className="ju_progress_tracking_main">
                 <div className="container">
@@ -22,7 +28,7 @@ const LearningPathChart = () => {
                                     <div className="ju_table_content_area" id="accordion">
                                         {/* <!-- 1.single items of table Start --> */}
                                         <div className="ju_single_table_content_design">
-                                            <ul data-toggle="collapse" data-target="#demo1" id="headingOne" className="card-header rjdesign active">
+                                            <ul onClick={() => setScience(!science)} data-toggle="collapse" data-target="#demo1" id="headingOne" className="card-header rjdesign active">
                                                 <li className="ju_first">
                                                     <i className="fas fa-chevron-down"></i>
                                                     <div className="box_cmt"></div>
@@ -39,7 +45,7 @@ const LearningPathChart = () => {
                                                     </div>
                                                 </div>
                                             </ul>
-                                            <div className="ju_tabcontent_main_area show collapse" id="demo1">
+                                            <div className="ju_tabcontent_main_area show collapse" id="demo1" style={{height: `${science ? 'auto' : 0}`}}>
                                                 <div className="ui_single">
                                                     <ul>
                                                         <li>Earth Science 101</li>
@@ -149,7 +155,7 @@ const LearningPathChart = () => {
                                         {/* <!-- 1.single items of table End --> */}
 
                                         {/* <!-- 2.single items of table Start --> */}
-                                        <div className="ju_single_table_content_design">
+                                        <div onClick={() => setTech(!tech)} className="ju_single_table_content_design">
                                             <ul data-toggle="collapse" data-target="#collapseTwo" id="headingTwo" className="card-header rjdesign collapsed">
                                                 <li className="ju_first">
                                                     <i className="fas fa-chevron-down"></i>
@@ -167,7 +173,7 @@ const LearningPathChart = () => {
                                                     </div>
                                                 </div>
                                             </ul>
-                                            <div id="collapseTwo" className="collapse">
+                                            <div id="collapseTwo" style={{height: `${tech ? 'auto' : 0}`}}>
                                                 <div className="ui_single">
                                                     <ul>
                                                         <li>Intro to Computers</li>
@@ -278,7 +284,7 @@ const LearningPathChart = () => {
 
                                         {/* <!-- 3.single items of table Start --> */}
                                         <div className="ju_single_table_content_design">
-                                            <ul data-toggle="collapse" data-target="#collapseThree" id="headingTwo" className="card-header rjdesign">
+                                            <ul onClick={() => setMath(!math)} data-toggle="collapse" data-target="#collapseThree" id="headingTwo" className="card-header rjdesign">
                                                 <li className="ju_first">
                                                     <i className="fas fa-chevron-down"></i>
                                                     <div className="box_cmt box_tb_items2"></div>
@@ -295,7 +301,7 @@ const LearningPathChart = () => {
                                                     </div>
                                                 </div>
                                             </ul>
-                                            <div id="collapseThree" className="collapse">
+                                            <div id="collapseThree"  style={{height: `${math ? 'auto' : 0}`}}>
                                                 <div className="ui_single">
                                                     <ul>
                                                         <li>Geometry 101</li>
@@ -406,7 +412,7 @@ const LearningPathChart = () => {
 
                                         {/* <!-- 4.single items of table Start --> */}
                                         <div className="ju_single_table_content_design">
-                                            <ul data-toggle="collapse" data-target="#collapseFour" id="headingTwo" className="card-header rjdesign">
+                                            <ul onClick={() => setFineArt(!fineArt)} data-toggle="collapse" data-target="#collapseFour" id="headingTwo" className="card-header rjdesign">
                                                 <li className="ju_first">
                                                     <i className="fas fa-chevron-down"></i>
                                                     <div className="box_cmt box_tb_items3"></div>
@@ -423,7 +429,7 @@ const LearningPathChart = () => {
                                                     </div>
                                                 </div>
                                             </ul>
-                                            <div id="collapseFour" className="collapse">
+                                            <div id="collapseFour" style={{height: `${fineArt ? 'auto' : 0}`}}>
                                                 <div className="ui_single">
                                                     <ul>
                                                         <li>Art History 101</li>
@@ -534,7 +540,7 @@ const LearningPathChart = () => {
 
                                         {/* <!-- 5.single items of table Start --> */}
                                         <div className="ju_single_table_content_design">
-                                            <ul data-toggle="collapse" data-target="#collapseFive" id="headingTwo" className="card-header rjdesign">
+                                            <ul onClick={() => setSocialStudy(!socialStudy)} data-toggle="collapse" data-target="#collapseFive" id="headingTwo" className="card-header rjdesign">
                                                 <li className="ju_first">
                                                     <i className="fas fa-chevron-down"></i>
                                                     <div className="box_cmt box_tb_items4"></div>
@@ -551,7 +557,7 @@ const LearningPathChart = () => {
                                                     </div>
                                                 </div>
                                             </ul>
-                                            <div id="collapseFive" className="collapse">
+                                            <div id="collapseFive"  style={{height: `${socialStudy ? 'auto' : 0}`}}>
                                                 <div className="ui_single">
                                                     <ul>
                                                         <li>US History</li>
@@ -662,7 +668,7 @@ const LearningPathChart = () => {
 
                                         {/* <!-- 6.single items of table Start --> */}
                                         <div className="ju_single_table_content_design">
-                                            <ul data-toggle="collapse" data-target="#collapseSix" id="headingTwo" className="card-header rjdesign">
+                                            <ul onClick={() => setForeignLang(!foreignLang)} data-toggle="collapse" data-target="#collapseSix" id="headingTwo" className="card-header rjdesign">
                                                 <li className="ju_first tide_here">
                                                     <i className="fas fa-chevron-down"></i>
                                                     <div className="box_cmt box_tb_items5"></div>
@@ -679,7 +685,7 @@ const LearningPathChart = () => {
                                                     </div>
                                                 </div>
                                             </ul>
-                                            <div id="collapseSix" className="collapse">
+                                            <div id="collapseSix"  style={{height: `${foreignLang ? 'auto' : 0}`}}>
                                                 <div className="ui_single">
                                                     <ul>
                                                         <li>Intro to Foreign Language</li>

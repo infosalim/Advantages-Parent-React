@@ -9041,6 +9041,7 @@ m .ra_courch_area .mu_dropdown_menu_content ul li:last-child img {
 }
 .ju_single_table_content_design {
   position: relative;
+  overflow: hidden;
 }
 .ju_posional_progress .myclassroom-single-left-cross-progress {
   width: 100%;
@@ -10302,6 +10303,7 @@ m .ra_courch_area .mu_dropdown_menu_content ul li:last-child img {
 .list_resource_pages_main_area .dropdown-menu {
   margin: 0.125rem 0 0;
 }
+
 /* ====================================================================================================================================================
     ===========================                             *** END NEW PROJECT PAGES CSS ***                           ================================
     ==================================================================================================================================================== */

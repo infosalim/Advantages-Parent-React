@@ -4,7 +4,6 @@ import ChatBox from '../components/chat/ChatBox';
 
 const Layout = ({ children }) => {
     return (
-
         <div>
             <ChatBox />
             <Header />

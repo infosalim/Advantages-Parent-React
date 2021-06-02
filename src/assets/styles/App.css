@@ -6829,22 +6829,94 @@ button {
 }
 
 /* Resources Slide area start */
-.ra_resources_slider_area_ex {
-  padding-left: 30px;
+/* .ra_resources_slider_area_ex {
+  padding: 0 30px;
+} */
+
+.swiper-container {
+  padding: 0 30px 40px;
 }
-.ra_resources_slider_area {
-  position: relative;
-}
-.ra_resources_slider_area::after {
+.swiper-container::after {
   content: "";
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 28px;
-  /* background: url('../assets/images/learning/affff.png') no-repeat scroll 0 0 / cover; */
+  background: url(../images//learning/affff.png) no-repeat scroll 0 0 / cover;
   z-index: 1;
 }
+.swiper-button-next {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  background: #f3f6f9;
+  z-index: 9;
+}
+
+.swiper-button-next:after {
+  font-size: 16px;
+  color: #717171;
+  font-weight: 700;
+}
+.swiper-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 28px;
+  transform: rotate(180deg);
+  background: url(../images//learning/affff.png) no-repeat scroll 0 0 / cover;
+  z-index: 2;
+}
+.swiper-button-prev {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 0;
+  background: #f3f6f9;
+  z-index: 9;
+}
+
+.swiper-button-prev:after {
+  font-size: 16px;
+  color: #717171;
+  font-weight: 700;
+}
+.ra_resources_slider_area {
+  position: relative;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
+}
+
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background: transparent;
+  border: 2px solid #3F4254;
+  transition: all .3s ease-in;
+  opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #3F4254;
+  transform: scale(1.5);
+}
+/* .ra_resources_slider_area::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 28px;
+  background: url(../images/learning/affff.png) no-repeat scroll 0 0 / cover;
+  z-index: 2;
+} */
 .ra_resources_slider_area_single_main {
   border: 1px solid #e4e6ef;
   border-radius: 4px;
@@ -6946,7 +7018,7 @@ button {
 
 .ra_resources_area_bottom_text {
   text-align: right;
-  padding-top: 60px;
+  padding-top: 24px;
 }
 .ra_resources_area_bottom_text a {
   color: #0078bf;

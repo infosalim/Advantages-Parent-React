@@ -130,7 +130,7 @@ const Calender = () => {
                     <div className="ra_custom_checkbox_area_item">
                         <div className="custom-control custom-checkbox mb-3">
                             <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
-                            <label className="custom-control-label" for="customCheck">Show my class attendance</label>
+                            <label className="custom-control-label" htmlFor="customCheck">Show my class attendance</label>
                         </div>
                         <ul>
                             <li>

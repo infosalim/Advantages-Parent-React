@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 // Styles
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+// import 'swiper/swiper.scss';
+import 'swiper/swiper-bundle.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/App.css';
 import './assets/styles/responsive.css';
